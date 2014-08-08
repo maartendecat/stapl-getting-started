@@ -6,14 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
 	<description>A simple Maven project to get started with STAPL quickly.</description>
-	<inceptionYear>2010</inceptionYear>
-	<licenses>
-		<license>
-			<name>My License</name>
-			<url>http://....</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+	<inceptionYear>2014</inceptionYear>
 
 	<properties>
 		<maven.compiler.source>1.6</maven.compiler.source>
