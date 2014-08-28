@@ -18,7 +18,6 @@ object App {
 }
 
 import stapl.core._
-import stapl.core.templates._
 
 object ExamplePolicy extends BasicPolicy {
   
@@ -26,6 +25,6 @@ object ExamplePolicy extends BasicPolicy {
 
   val policy = Policy("example policy") := when (action.id === "view") apply PermitOverrides to (
       Rule("permit physicians") := when ("physician" in subject.roles) permit,
-      defaultDeny
+      Rule("default deny") := deny
   )  
 }
