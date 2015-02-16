@@ -1,6 +1,7 @@
 package stapl.getting_started
 
 import stapl.core.pdp._
+import stapl.core._
 
 object App {
   
@@ -17,9 +18,9 @@ object App {
 
 }
 
-import stapl.core._
-
 object ExamplePolicy extends BasicPolicy {
+	
+  import stapl.core.dsl._
   
   subject.roles = ListAttribute(String)
 
